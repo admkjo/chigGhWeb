@@ -27,5 +27,10 @@ class HomeController extends Controller
         $clients = Clients::all();
         return view('home')->with('clients', $clients);
     }
+    public function getClients(){
+        $clients = Clients::all();
+        return  PostResource::collection($clients);
+
+    }
 
 }

@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Passport\Passport;
 use Illuminate\Support\Facades\Schema; //NEW: Import Schema
 
 function boot()
