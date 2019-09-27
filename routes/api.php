@@ -10,16 +10,17 @@
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('clients', 'HomeController@getClients');
 Route::prefix('v1')->group(function(){
     Route::post('login', 'Api\AuthController@login');
     Route::post('register', 'Api\AuthController@register');
+    Route::get('users', 'Api\AuthController@getUser');
+    Route::get('clients', 'Api\AuthController@getClients');
     Route::group(['middleware' => 'auth:api'], function(){
     Route::post('getUser', 'Api\AuthController@getUser');
-    Route::get('getUsers', 'Api\AuthController@getUser');
-
+    // Route::get('users', 'Api\AuthController@getUser');
+    // Route::get('clients', 'Api\AuthController@getClients');
     });
    });
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });

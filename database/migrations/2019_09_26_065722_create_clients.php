@@ -20,6 +20,7 @@ class CreateClients extends Migration
             $table->string('phone');
             $table->string('location');
             $table->string('code');
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }

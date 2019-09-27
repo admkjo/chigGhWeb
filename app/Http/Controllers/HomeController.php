@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Clients;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -24,13 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $clients = Clients::all();
+        $clients = $clients = Clients::where('status', 0)
+        ->orderBy('created_at', 'DESC')
+        ->get();
         return view('home')->with('clients', $clients);
     }
-    public function getClients(){
-        $clients = Clients::all();
-        return  PostResource::collection($clients);
 
-    }
 
 }
