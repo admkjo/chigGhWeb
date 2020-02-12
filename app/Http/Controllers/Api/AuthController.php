@@ -49,7 +49,7 @@ public function getUser() {
     ->orderBy('id', 'desc')
     ->take(50)
     ->get();
-    return response()->json(['success' => $clients], $this->successStatus);
+    return response()->json($clients, $this->successStatus);
 }
 
 }

@@ -82,15 +82,14 @@ class RegisterController extends Controller
         ]);
 
         if ($validator->fails()) {
-            dd($validator);
             return view('done');
         }
 
         $lastCode= $this->getLastCode()['code'];
-        $numString = substr($lastCode,3);
+        $numString = substr($lastCode,2);
         $num = intval($numString);
         $codenum = $num + 1;
-        $code = "VM-".$codenum;
+        $code = "VM".$codenum;
         $client = new Clients();
         $client->name = request('name');
         $client->email = request('email');

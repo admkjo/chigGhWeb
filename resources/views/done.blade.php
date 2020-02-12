@@ -32,9 +32,7 @@
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form"  method="POST" action="{{ route('regis') }}">
                         @csrf
-				<span class="contact100-form-title">
-					CONGRATULATIONS
-				</span>
+					<h3>CONGRATULATIONS</h3>
 
 			</form>
 		</div>
