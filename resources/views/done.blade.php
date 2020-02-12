@@ -29,10 +29,25 @@
 
 
 	<div class="container-contact100">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="al-cta-box text-center">
+                                <a href="{{ url('/') }}" class="btn btn-primary btn-lg py-2 px-5 mt-4 font-weight-bold">Home </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form"  method="POST" action="{{ route('regis') }}">
                         @csrf
-					<h3>CONGRATULATIONS</h3>
+                    <h2>CONGRATULATIONS!!!</h2>
+                    <h4 style="text-align:justify">
+                        Your registration was successul.
+                        please save this number <strong>"0246 166 473"</strong> and send a message through
+                        whatsapp to receive your registration code.
+                    </h4>
 
 			</form>
 		</div>

@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('homepage');
 });
+
+Route::get('/new-registration', function () {
+    return view('registration');
+});
 Route::get('/done', function () {
     return view('done');
 });

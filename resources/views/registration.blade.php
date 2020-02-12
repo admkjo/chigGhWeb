@@ -27,7 +27,16 @@
 </head>
 <body>
 
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="al-cta-box text-center">
+                            <a href="{{ url('/') }}" class="btn btn-primary btn-lg py-2 px-5 mt-4 font-weight-bold">Home </a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form"  method="POST" action="{{ route('regis') }}">

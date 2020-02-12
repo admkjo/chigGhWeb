@@ -53,6 +53,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#partners">Our Partners</a>
           </li>
+          <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{ url('new-registration') }}">Register</a>
+        </li>
         </ul>
       </div>
     </div>
@@ -65,6 +68,17 @@
             You are welcome to this 21st century money making platform. If you find yourself here, it's not by chance but by your inner man that tells you you can do better than you are now. The quest to live your dream starts here.  This platform, unlike other platforms is not promising Bill Gates worth within a day but stress on using a systematic easy steps to make money without stress. Just by broadcasting ads and making leads on item sales you get paid.
             With over 250 businesses looking forward to raise sales you can recommend daily items such as mobile phones, laptops,cars,  home appliances, fashion, beauty, pharmacy, real Estates, tourism, restaurant, events, energy, Agriculture, Education, Health, Economy, Finance and so much more and make money. Just remember, there are lots of people out there who wants to buy, just by your recommendation you get paid with some good instant commission.  It's time to get rich, start the journey today.
         </p>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="al-cta-box text-center">
+                            <a href="{{ url('new-registration') }}" class="btn btn-warning btn-lg py-2 px-5 mt-4 font-weight-bold">Click here to Register </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
     </div>
   </header>
 
